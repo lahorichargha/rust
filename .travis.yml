@@ -164,7 +164,7 @@ before_script:
       elif [[ "$TRAVIS_BRANCH" == "auto" || ( "$ALLOW_TRY" == "1" && "$TRAVIS_BRANCH" == "try" ) ]]; then
           SKIP_BUILD=false;
       else
-          SKIP_BUILD=true;
+          SKIP_BUILD=false;
       fi
 
       if [[ "$SKIP_BUILD" == true ]]; then
